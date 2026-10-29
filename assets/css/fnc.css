@@ -1,0 +1,127 @@
+/* کپچای عددی فارسی — استایل فیلد */
+.fnc-field {
+	display: block;
+	margin: 0 0 1.2em;
+	padding: 0;
+	clear: both;
+}
+
+.fnc-field .fnc-label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.fnc-field .fnc-required {
+	color: #d63638;
+	margin-inline-start: 2px;
+}
+
+.fnc-field .fnc-media {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+	max-width: 100%;
+}
+
+.fnc-field .fnc-img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	background: #f7f7f7;
+}
+
+.fnc-field .fnc-refresh {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #dcdcde;
+	border-radius: 50%;
+	background: #fff;
+	color: #2271b1;
+	font-size: 18px;
+	line-height: 1;
+	cursor: pointer;
+	transition: transform 0.25s ease, color 0.2s ease, border-color 0.2s ease;
+	flex: 0 0 auto;
+}
+
+.fnc-field .fnc-refresh:hover,
+.fnc-field .fnc-refresh:focus {
+	color: #135e96;
+	border-color: #2271b1;
+	transform: rotate(90deg);
+	outline: none;
+}
+
+.fnc-field .fnc-refresh:focus-visible {
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2271b1;
+}
+
+.fnc-field .fnc-refresh.is-loading {
+	opacity: 0.6;
+	cursor: progress;
+	transform: none;
+}
+
+.fnc-field .fnc-input {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 220px;
+	padding: 8px 10px;
+	margin: 0;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	background: #fff;
+	font-size: 16px;
+	letter-spacing: 3px;
+	text-align: center;
+	direction: ltr;
+	color: #1d2327;
+}
+
+.fnc-field .fnc-input:focus {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+	outline: none;
+}
+
+.fnc-field .fnc-input.fnc-error {
+	border-color: #d63638;
+	box-shadow: 0 0 0 1px #d63638;
+}
+
+.fnc-field .fnc-input.fnc-ok {
+	border-color: #00a32a;
+	box-shadow: 0 0 0 1px #00a32a;
+}
+
+/* در صفحه ورود وردپرس فیلد کمی جمع‌وجورتر می‌شود */
+.login form .fnc-field {
+	margin-bottom: 16px;
+}
+
+.login form .fnc-field .fnc-input {
+	max-width: 100%;
+}
+
+/* پشتیبانی راست‌به‌چپ */
+.rtl .fnc-field .fnc-input {
+	text-align: center;
+}
+
+@media (max-width: 480px) {
+	.fnc-field .fnc-media {
+		flex-wrap: wrap;
+	}
+}
